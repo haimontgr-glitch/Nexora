@@ -279,3 +279,15 @@ Add a subtle zoom punch of 105–110% in CapCut on each key trigger: ≈2.63, 3.
 
 - A listen at **6.08 s, 10.60 s and ≈22.97 s**, to confirm the mapping notes in section 0.
 - If the sync is off anywhere after your first pass in CapCut, give me the real times you hear and I'll re-run `tools/gen_timing.py` and update the SRTs.
+
+---
+
+## 8. 2D animatic (built)
+
+`output/nexora_animatic.mp4` is a 1080×1920, 30 fps, 43.00 s motion-graphics animatic. It is **not** 3D CGI. It is a timing and layout reference for the real edit.
+- `output/nexora_animatic.mp4` has your voiceover plus a synthesized music and SFX bed, ducked under the voice.
+- `output/nexora_animatic_voice_only.mp4` has the same video with only your voiceover.
+- Rebuild with `tools/build_animatic.sh <path to NEXORA.mp3>`.
+- The voiceover is mixed at unity gain with no EQ, trim or speed change. MP4 needs AAC, so the MP3 is re-encoded once at 192 kbps and is not bit-identical.
+- Visual cut points use the measured segment boundaries. Trigger moments (counters, the 10 icons, the Follow press and so on) use the ≈ estimates from section 1.
+- The 50 particles are exactly 50, and the profile icons are exactly 10 (one every 0.15 s from 27.40 s).
